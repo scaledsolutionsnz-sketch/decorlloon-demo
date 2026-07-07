@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave a Review | Decorlloon, Invercargill</title>
+<meta name="description" content="Rate your experience with Decorlloon balloon styling in Invercargill.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .rate-wrap{min-height:100svh;display:grid;place-items:center;background:var(--plum);position:relative;overflow:hidden;padding:120px 20px 60px}
+  .rate-wrap::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:var(--accent);filter:blur(80px);opacity:.32;top:-120px;left:-60px}
+  .rate-wrap::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:var(--gold);filter:blur(80px);opacity:.22;bottom:-120px;right:-60px}
+  .rate-card{position:relative;z-index:2;background:var(--white);border-radius:26px;box-shadow:var(--shadow);max-width:560px;width:100%;padding:48px 40px;text-align:center;animation:fadeUp .7s var(--ease)}
+  .rate-card .eyebrow{justify-content:center}
+  .rate-card h1{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:.5rem}
+  .rate-card .lead{color:var(--muted);margin-bottom:1.8rem}
+  .stars-pick{display:flex;justify-content:center;gap:.4rem;margin-bottom:1.6rem}
+  .stars-pick button{background:none;border:0;font-size:2.8rem;line-height:1;cursor:pointer;color:#e7dcd6;transition:transform .15s var(--ease),color .15s}
+  .stars-pick button:hover{transform:scale(1.15)}
+  .stars-pick button.lit{color:var(--gold)}
+  .rate-hint{font-size:.9rem;color:var(--muted);min-height:1.3rem}
+  .back-home{display:inline-block;margin-top:1.6rem;color:var(--muted);font-weight:600;font-size:.9rem}
+  .back-home:hover{color:var(--accent-deep)}
+  .brand-top{position:absolute;top:26px;left:50%;transform:translateX(-50%);z-index:3}
+</style>
+</head>
+<body>
+<div class="rate-wrap">
+  <a href="index.html" class="brand brand-top"><span class="dot"></span>Decorlloon</a>
+  <div class="rate-card">
+    <div class="eyebrow">Your feedback</div>
+    <h1>How did we do?</h1>
+    <p class="lead">Tap a star to rate your experience with Decorlloon.</p>
+    <div class="stars-pick" id="stars">
+      <button data-v="1" aria-label="1 star">★</button>
+      <button data-v="2" aria-label="2 stars">★</button>
+      <button data-v="3" aria-label="3 stars">★</button>
+      <button data-v="4" aria-label="4 stars">★</button>
+      <button data-v="5" aria-label="5 stars">★</button>
+    </div>
+    <p class="rate-hint" id="hint">Tap to choose 1 to 5 stars</p>
+    <a href="index.html" class="back-home">← Back to home</a>
+  </div>
+</div>
+<script>
+  // 4-5 stars -> Google review; 1-2-3 -> private feedback form
+  var GOOGLE_REVIEW_URL="https://g.page/r/PLACEHOLDER/review";
+  var stars=document.querySelectorAll('#stars button');
+  var hint=document.getElementById('hint');
+  stars.forEach(function(btn){
+    btn.addEventListener('mouseenter',function(){paint(+btn.dataset.v);});
+    btn.addEventListener('mouseleave',function(){paint(0);});
+    btn.addEventListener('click',function(){
+      var v=+btn.dataset.v;paint(v);
+      hint.textContent="Thanks! Taking you there…";
+      setTimeout(function(){
+        if(v>=4){window.location.href=GOOGLE_REVIEW_URL;}
+        else{window.location.href="private.html?rating="+v;}
+      },450);
+    });
+  });
+  function paint(n){stars.forEach(function(b){b.classList.toggle('lit',+b.dataset.v<=n);});}
+</script>
+</body>
+</html>

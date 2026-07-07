@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share Your Feedback | Decorlloon, Invercargill</title>
+<meta name="description" content="Tell Decorlloon how we can do better. Your feedback goes straight to us.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .fb-wrap{min-height:100svh;display:grid;place-items:center;background:var(--plum);position:relative;overflow:hidden;padding:120px 20px 60px}
+  .fb-wrap::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:var(--accent);filter:blur(80px);opacity:.3;top:-120px;right:-60px}
+  .fb-card{position:relative;z-index:2;background:var(--white);border-radius:26px;box-shadow:var(--shadow);max-width:600px;width:100%;padding:46px 40px;animation:fadeUp .7s var(--ease)}
+  .fb-card .eyebrow{justify-content:flex-start}
+  .fb-card h1{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:.4rem}
+  .fb-card .lead{color:var(--muted);margin-bottom:1.6rem}
+  .field{margin-bottom:1.1rem}
+  .field label{display:block;font-family:"Baloo 2",sans-serif;font-weight:600;color:var(--plum);margin-bottom:.4rem;font-size:.95rem}
+  .field input,.field textarea,.field select{width:100%;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--cream);transition:border-color .2s}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--accent)}
+  .field textarea{resize:vertical;min-height:120px}
+  .rating-row{display:flex;gap:.3rem;font-size:1.8rem;color:#e7dcd6}
+  .rating-row .on{color:var(--gold)}
+  .brand-top{position:absolute;top:26px;left:50%;transform:translateX(-50%);z-index:3}
+  .success{display:none;text-align:center;padding:20px 0}
+  .success.show{display:block;animation:fadeUp .5s var(--ease)}
+  .success .circle{width:76px;height:76px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;margin:0 auto 18px}
+  .success h2{font-size:1.6rem;margin-bottom:.4rem}
+  .success p{color:var(--muted)}
+  .back-home{display:inline-block;margin-top:1rem;color:var(--muted);font-weight:600;font-size:.9rem}
+  .back-home:hover{color:var(--accent-deep)}
+</style>
+</head>
+<body>
+<div class="fb-wrap">
+  <a href="index.html" class="brand brand-top"><span class="dot"></span>Decorlloon</a>
+  <div class="fb-card">
+    <div id="formView">
+      <div class="eyebrow">We're listening</div>
+      <h1>Help us make it right.</h1>
+      <p class="lead">Thanks for the honest feedback — tell us what happened and we'll do our best to sort it. This goes straight to Decorlloon, privately.</p>
+      <form action="https://formsubmit.co/hello@decorlloon.co.nz" method="POST" id="fbForm">
+        <input type="hidden" name="_subject" value="New private feedback — Decorlloon">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="First and last name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label>Your rating</label>
+          <div class="rating-row" id="ratingRow">
+            <span data-i="1">★</span><span data-i="2">★</span><span data-i="3">★</span><span data-i="4">★</span><span data-i="5">★</span>
+          </div>
+          <input type="hidden" name="rating" id="ratingInput" value="">
+        </div>
+        <div class="field">
+          <label for="feedback">What could we have done better?</label>
+          <textarea id="feedback" name="feedback" placeholder="Tell us about your event and what let you down…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send feedback</button>
+      </form>
+    </div>
+    <div class="success" id="successView">
+      <div class="circle"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h2>Thank you</h2>
+      <p>Your feedback has been sent straight to Decorlloon. We really appreciate you taking the time — we'll be in touch.</p>
+      <a href="index.html" class="back-home">← Back to home</a>
+    </div>
+  </div>
+</div>
+<script>
+  // Pre-fill rating from URL
+  var params=new URLSearchParams(window.location.search);
+  var rating=parseInt(params.get('rating'),10);
+  var cells=document.querySelectorAll('#ratingRow span');
+  var ratingInput=document.getElementById('ratingInput');
+  function setRating(v){ratingInput.value=v;cells.forEach(function(c){c.classList.toggle('on',+c.dataset.i<=v);});}
+  if(rating>=1&&rating<=5)setRating(rating);
+  cells.forEach(function(c){c.style.cursor='pointer';c.addEventListener('click',function(){setRating(+c.dataset.i);});});
+  // AJAX submit -> show success state (no redirect, no reCAPTCHA)
+  var form=document.getElementById('fbForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var data=new FormData(form);
+    fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+      .then(function(){show();}).catch(function(){show();});
+  });
+  function show(){document.getElementById('formView').style.display='none';document.getElementById('successView').classList.add('show');}
+</script>
+</body>
+</html>
