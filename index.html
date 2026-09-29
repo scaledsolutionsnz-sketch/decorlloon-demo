@@ -8,7 +8,7 @@
 <meta property="og:title" content="Decorlloon | Balloon Styling, Invercargill">
 <meta property="og:description" content="Balloon garlands, arches and event styling across Invercargill and Southland. Designed, built and set up for you.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:image" content="https://decorlloon-demo.vercel.app/images/decor-01.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,20 +20,21 @@
 <!-- Intro overlay -->
 <div class="intro" id="intro">
   <div class="intro-mark">
-    <div class="intro-balloon"></div>
-    <span>Decorlloon</span>
+    <div class="intro-logo-chip"><img src="images/logo.png" alt="Decorlloon — creating art with balloons" /></div>
   </div>
 </div>
 
 <!-- Nav -->
 <nav class="nav" id="nav">
-  <a href="index.html" class="brand"><span class="dot"></span>Decorlloon</a>
+  <a href="index.html" class="brand"><img class="brand-logo" src="images/logo.png" alt="Decorlloon" /></a>
   <div class="nav-links" id="navLinks">
     <a href="#services">Services</a>
-    <a href="#work">Our Work</a>
+    <a href="#shop">Shop All</a>
     <a href="#about">About</a>
+    <a href="#local-spot">Local Spot</a>
     <a href="#reviews">Reviews</a>
-    <a href="tel:+64274596719" class="btn btn--primary nav-cta">Call 027 459 6719</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="btn btn--primary nav-cta">Request a Quote</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -41,9 +42,9 @@
 <!-- Hero -->
 <header class="hero" id="top">
   <div class="hero-slides" id="heroSlides">
-    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1900&q=80')"></div>
-    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1900&q=80"></div>
-    <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?auto=format&fit=crop&w=1900&q=80"></div>
+    <div class="hero-slide active" style="background-image:url('images/decor-01.jpg')"></div>
+    <div class="hero-slide" data-bg="images/decor-11.jpg"></div>
+    <div class="hero-slide" data-bg="images/decor-10.jpg"></div>
   </div>
   <div class="wrap hero-inner">
     <div class="eyebrow">Invercargill &amp; Southland · Balloon Stylist</div>
@@ -52,6 +53,20 @@
     <div class="hero-cta">
       <a href="#contact" class="btn btn--primary btn--lg">Book your date</a>
       <a href="tel:+64274596719" class="btn btn--ghost btn--lg">Call 027 459 6719</a>
+    </div>
+    <div class="quick-actions" aria-label="Quick access">
+      <a href="#contact" class="quick-action">Request a quote <span>↗</span></a>
+      <a href="#shop" class="quick-action">Shop all <span>↗</span></a>
+      <a href="#pricing" class="quick-action">View catalogue <span>↗</span></a>
+    </div>
+    <div class="socials hero-social">
+      <span class="socials-label">Follow us</span>
+      <a class="social-ic" href="https://www.facebook.com/Decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+      </a>
+      <a class="social-ic" href="https://www.instagram.com/decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
     </div>
   </div>
   <div class="hero-scroll"><span>Scroll</span><span class="line"></span></div>
@@ -77,28 +92,109 @@
   </div>
 </section>
 
+<!-- Decorlloon local spot -->
+<section class="section section--bone" id="local-spot">
+  <div class="wrap local-spot">
+    <div class="section-head reveal">
+      <div class="eyebrow">Decorlloon local spot</div>
+      <h2>Find our balloons at Piece of Cake.</h2>
+      <p>We’re proud to have some of our products available locally at Piece of Cake in Invercargill. Drop in for a sweet treat and discover a little Decorlloon styling while you’re there.</p>
+    </div>
+    <div class="local-spot-grid">
+      <div class="local-spot-copy reveal">
+        <img class="piece-logo" src="images/piece-of-cake-logo.jpg" alt="Piece of Cake Invercargill">
+        <h3>Piece of Cake, Invercargill</h3>
+        <p>Visit the store in the central arcade. The supplied map shows the route from Don Street and Esk Street to Shop 6.</p>
+        <a class="btn btn--primary btn--lg" href="https://www.google.com/maps/search/?api=1&amp;query=Piece+of+Cake+Invercargill" target="_blank" rel="noopener">Open location in Google Maps <span>↗</span></a>
+      </div>
+      <a class="local-map reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Piece+of+Cake+Invercargill" target="_blank" rel="noopener" aria-label="Open Piece of Cake location in Google Maps"><img src="images/piece-of-cake-map.png" alt="Map showing Piece of Cake, Shop 6, in Invercargill Central"></a>
+    </div>
+    <div class="local-photo-grid reveal">
+      <img src="images/piece-of-cake-building.png" alt="Piece of Cake building in Invercargill">
+      <img src="images/piece-of-cake-inside.png" alt="Piece of Cake shop interior with Decorlloon balloons">
+    </div>
+  </div>
+</section>
+
+<!-- Shop all -->
+<section class="section section--white" id="shop">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Shop all</div>
+      <h2>Balloon details for every kind of celebration.</h2>
+      <p>Browse the range, filter by style, then request a quote with the product already selected.</p>
+    </div>
+    <div class="shop-filters" role="tablist" aria-label="Product categories">
+      <button class="shop-filter active" data-filter="all" role="tab">All</button>
+      <button class="shop-filter" data-filter="number" role="tab">Number Balloons</button>
+      <button class="shop-filter" data-filter="lettering" role="tab">Lettering &amp; Number Balloons</button>
+      <button class="shop-filter" data-filter="character" role="tab">Number &amp; Character Balloons</button>
+      <button class="shop-filter" data-filter="bubble" role="tab">Bubble Balloons</button>
+      <button class="shop-filter" data-filter="columns" role="tab">Columns Balloons</button>
+      <button class="shop-filter" data-filter="helium" role="tab">Helium balloons</button>
+      <button class="shop-filter" data-filter="bouquet" role="tab">Balloon Flower Bouquets</button>
+      <button class="shop-filter" data-filter="easel" role="tab">Easel Stand with Personalised Poster</button>
+      <button class="shop-filter" data-filter="background" role="tab">Background Decorations</button>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <article class="product-card reveal" data-category="number" data-product="Number Balloon Arrangement" data-price="From $145">
+        <button class="product-image" type="button"><img src="images/decor-01.jpg" alt="Blue and silver birthday balloon display"></button>
+        <div class="product-meta"><span>Number balloons</span><strong>Number Balloon Arrangement</strong><b>From $145</b></div>
+      </article>
+      <article class="product-card reveal" data-category="bubble" data-product="Bubble Balloon Arrangement" data-price="From $75">
+        <button class="product-image" type="button"><img src="images/decor-02.jpg" alt="Themed balloon columns"></button>
+        <div class="product-meta"><span>Bubble balloons</span><strong>Bubble Balloon Arrangement</strong><b>From $75</b></div>
+      </article>
+      <article class="product-card reveal" data-category="background" data-product="21st Background Decorations" data-price="From $325">
+        <button class="product-image" type="button"><img src="images/decor-03.jpg" alt="Milestone number balloon display"></button>
+        <div class="product-meta"><span>Background decorations</span><strong>21st Background Decorations</strong><b>From $325</b></div>
+      </article>
+      <article class="product-card reveal" data-category="bubble bouquet" data-product="Personalised Bubble Bouquet" data-price="From $75">
+        <button class="product-image" type="button"><img src="images/decor-04.jpg" alt="Personalised bubble balloon gift"></button>
+        <div class="product-meta"><span>Bubble balloons</span><strong>Personalised Bubble Bouquet</strong><b>From $75</b></div>
+      </article>
+      <article class="product-card reveal" data-category="number" data-product="Milestone Number Stack" data-price="From $110">
+        <button class="product-image" type="button"><img src="images/decor-05.jpg" alt="Green and silver milestone balloons"></button>
+        <div class="product-meta"><span>Number balloons</span><strong>Milestone Number Stack</strong><b>From $110</b></div>
+      </article>
+      <article class="product-card reveal" data-category="bouquet helium" data-product="Balloon Flower Bouquet" data-price="From $85">
+        <button class="product-image" type="button"><img src="images/decor-06.jpg" alt="Silver and blue balloon flower bouquet"></button>
+        <div class="product-meta"><span>Flower bouquets</span><strong>Balloon Flower Bouquet</strong><b>From $85</b></div>
+      </article>
+      <article class="product-card reveal" data-category="easel background" data-product="Easel Welcome Display" data-price="From $145">
+        <button class="product-image" type="button"><img src="images/decor-10.jpg" alt="Black and gold event display"></button>
+        <div class="product-meta"><span>Easel &amp; backdrop</span><strong>Easel Welcome Display</strong><b>From $145</b></div>
+      </article>
+      <article class="product-card reveal" data-category="background bubble" data-product="Statement Backdrop Garland" data-price="From $180">
+        <button class="product-image" type="button"><img src="images/decor-11.jpg" alt="Pink statement balloon backdrop"></button>
+        <div class="product-meta"><span>Background decorations</span><strong>Statement Backdrop Garland</strong><b>From $180</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- Services -->
 <section class="section section--cream" id="services">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">What we make</div>
-      <h2>Balloons for every kind of celebration.</h2>
-      <p>Whether it's a backyard first birthday or a wedding at the venue, we design the look, build it by hand and install it on the day.</p>
+      <h2>A complete service, designed around you.</h2>
+      <p>We take care of the details, so you can enjoy your event. Fun, vibrant and personalised decorations for all ages.</p>
     </div>
     <div class="cards">
       <div class="card reveal">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c0-5 3-9 8-9s8 4 8 9"/><circle cx="8" cy="11" r="3"/><circle cx="16" cy="11" r="3"/><path d="M12 18v3"/></svg></div>
-        <h3>Garlands &amp; Arches</h3>
+        <h3>Custom Designs</h3>
         <p>Organic balloon garlands and full arches for entryways, backdrops and photo walls — sized to your space.</p>
       </div>
       <div class="card reveal d1">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 21v-4"/><path d="M5 4h14l-1 8a6 6 0 0 1-12 0Z"/></svg></div>
-        <h3>Kids' Birthday Parties</h3>
+        <h3>Gender Reveals, Baby Showers &amp; Christenings</h3>
         <p>Number balloons, themed characters and colour-pop setups that make the little ones' big day feel huge.</p>
       </div>
       <div class="card reveal d2">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7S9 2 6.5 4 8 7 12 7Z"/><path d="M12 7s3-5 5.5-3S16 7 12 7Z"/></svg></div>
-        <h3>Bouquets &amp; Deliveries</h3>
+        <h3>Birthdays &amp; Celebrations</h3>
         <p>Helium bouquets and surprise balloon deliveries around Invercargill — perfect for a doorstep birthday moment.</p>
       </div>
       <div class="card reveal">
@@ -108,12 +204,12 @@
       </div>
       <div class="card reveal d1">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
-        <h3>Corporate &amp; Openings</h3>
+        <h3>Corporate &amp; Events</h3>
         <p>Grand openings, launches and staff events branded in your colours — a clean, eye-catching entrance that gets noticed.</p>
       </div>
       <div class="card reveal d2">
         <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 4v5"/><path d="M16 4v5"/></svg></div>
-        <h3>Backdrops &amp; Styling</h3>
+        <h3>Delivery &amp; Set Up</h3>
         <p>Custom backdrops, plinths and signage styling to tie the whole room together for your theme.</p>
       </div>
     </div>
@@ -129,14 +225,18 @@
       <p>A mix of the setups we love building — from bright kids' parties to soft, elegant wedding installs.</p>
     </div>
     <div class="gallery reveal">
-      <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Ceiling filled with pastel balloons and ribbons at a party" loading="lazy" width="800" height="533">
-      <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80" alt="Floral event arch and styled ceremony setting" loading="lazy" width="800" height="1200">
-      <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" alt="Bright pink gift with gold ribbon and confetti" loading="lazy" width="800" height="533">
-      <img src="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?auto=format&fit=crop&w=800&q=80" alt="Happy Birthday banner styling at an outdoor kids party" loading="lazy" width="800" height="533">
-      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Long styled celebration table set for an event" loading="lazy" width="800" height="533">
-      <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Colourful confetti falling at a celebration" loading="lazy" width="800" height="533">
-      <img src="https://images.unsplash.com/photo-1464047736614-af63643285bf?auto=format&fit=crop&w=800&q=80" alt="Warm string lights and bunting decorating a venue" loading="lazy" width="800" height="600">
-      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Guests celebrating with confetti at a wedding" loading="lazy" width="800" height="1200">
+      <img src="images/decor-01.jpg" alt="Blue, black and silver Happy Birthday balloon arch backdrop" loading="lazy">
+      <img src="images/decor-11.jpg" alt="Pink butterfly first birthday and christening balloon arch" loading="lazy">
+      <img src="images/decor-10.jpg" alt="Black and gold 21st balloon setup with marquee numbers" loading="lazy">
+      <img src="images/decor-05.jpg" alt="Green, black and silver 60 HBD balloon number stacks" loading="lazy">
+      <img src="images/decor-03.jpg" alt="Navy, gold and silver 60th champagne balloon display" loading="lazy">
+      <img src="images/decor-12.jpg" alt="Pink Happy Birthday bubble balloon with tassel tail" loading="lazy">
+      <img src="images/decor-09.jpg" alt="Decorlloon owner beneath a MUM balloon garland" loading="lazy">
+      <img src="images/decor-02.jpg" alt="Easter bunny balloon columns for a childcare centre" loading="lazy">
+      <img src="images/decor-06.jpg" alt="Silver and blue balloon flower bouquet with bow" loading="lazy">
+      <img src="images/decor-08.jpg" alt="Mother's Day balloon hampers and bouquets at a market stall" loading="lazy">
+      <img src="images/decor-07.jpg" alt="Decorlloon Mother's Day gift range on display" loading="lazy">
+      <img src="images/decor-04.jpg" alt="Pink Happy Mother's Day balloon gift box for mama" loading="lazy">
     </div>
   </div>
 </section>
@@ -158,7 +258,7 @@
         <a href="#contact" class="btn btn--dark">Talk about your event</a>
       </div>
       <div class="about-media reveal d1">
-        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80" alt="Bright celebration gift styling with confetti" loading="lazy" width="1000" height="750">
+        <img src="images/decor-09.jpg" alt="Decorlloon's balloon stylist beneath a handmade MUM garland" loading="lazy">
         <div class="about-tag">Made by hand in Southland</div>
       </div>
     </div>
@@ -231,7 +331,28 @@
     <h2>Happy with our work? Leave us a review.</h2>
     <div class="big-stars">★★★★★</div>
     <p>Your feedback helps other Southland families and event planners find us — it only takes a moment.</p>
-    <a href="review.html" class="btn btn--primary btn--lg">Leave a review</a>
+    <a href="https://www.google.com/search?q=Decorlloon+Invercargill" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Leave a Google review</a>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section section--white" id="pricing">
+  <div class="wrap">
+    <div class="pricing-head reveal">
+      <div class="eyebrow" style="justify-content:center">Pricing</div>
+      <h2>Packages &amp; pricing</h2>
+      <p>Have a look through our balloon styling packages and pricing below. Every celebration is a little different, so get in touch for a quote tailored to your colours, venue and numbers.</p>
+      <p>Our catalogue is regularly updated with our latest decorations, packages, and pricing.</p>
+    </div>
+    <div class="canva-preview reveal">
+      <iframe loading="lazy" src="https://www.canva.com/design/DAHK0gEA1WA/UUv4fVJvuj-GE-EGahL_gw/view?embed" allow="fullscreen" allowfullscreen title="Decorlloon pricing preview"></iframe>
+    </div>
+    <div class="pricing-cta reveal">
+      <a class="btn btn--primary btn--lg" href="https://www.canva.com/design/DAHK0gEA1WA/UUv4fVJvuj-GE-EGahL_gw/view" target="_blank" rel="noopener">
+        Open the full pricing guide
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -250,7 +371,7 @@
           </li>
           <li>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
-            <div><b>Email</b><a href="mailto:hello@decorlloon.co.nz">hello@decorlloon.co.nz</a></div>
+            <div><b>Email</b><a href="mailto:decorlloon@gmail.com">decorlloon@gmail.com</a></div>
           </li>
           <li>
             <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
@@ -261,29 +382,93 @@
           <a href="tel:+64274596719" class="btn btn--primary btn--lg">Call Decorlloon</a>
           <a href="mailto:hello@decorlloon.co.nz" class="btn btn--outline btn--lg">Email Decorlloon</a>
         </div>
+        <div class="socials">
+          <span class="socials-label">Follow us</span>
+          <a class="social-ic" href="https://www.facebook.com/Decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a class="social-ic" href="https://www.instagram.com/decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
       </div>
       <div class="contact-media reveal d1">
-        <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1000&q=80" alt="Elegant styled event setting for a celebration" loading="lazy" width="1000" height="750">
+        <img src="images/decor-11.jpg" alt="Pink first birthday and christening balloon arch by Decorlloon" loading="lazy">
       </div>
+    </div>
+    <form class="quote-form reveal" id="quoteForm" action="mailto:decorlloon@gmail.com" method="post" enctype="text/plain">
+      <div><div class="eyebrow">Request a quote</div><h3>Tell us what you are planning.</h3><p>Share the date, venue and product you have in mind. We will come back with options and availability.</p></div>
+      <div class="quote-fields"><label>Name<input name="name" required></label><label>Email<input type="email" name="email" required></label><label>Event date<input type="date" name="date"></label><label>Product or idea<input id="quoteProduct" name="product" placeholder="e.g. balloon garland"></label><label class="full">Message<textarea name="message" rows="4" placeholder="Colours, venue, guest numbers and anything else helpful"></textarea></label></div>
+      <button class="btn btn--primary btn--lg" type="submit">Send request <span>↗</span></button>
+    </form>
+    <div class="tally-embed reveal">
+      <div class="eyebrow">Full quote request form</div>
+      <p>Prefer the complete quote questionnaire? You can submit it directly here.</p>
+      <iframe src="https://tally.so/embed/QKGeL1?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" title="Decorlloon quote request form"></iframe>
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
+<section class="section section--cream" id="faq">
+  <div class="wrap faq-wrap">
+    <div class="section-head reveal"><div class="eyebrow">Questions</div><h2>Good to know before you book.</h2></div>
+    <div class="faq-list">
+      <details><summary>How far in advance should I book my decoration?</summary><p>We recommend booking at least 3 weeks in advance, and around 6 weeks for larger or more customised events. Last-minute requests are welcome subject to availability.</p></details>
+      <details><summary>Can I choose my own balloon colours?</summary><p>Absolutely. We customise balloon colours to match your event theme, colour palette or personal preference.</p></details>
+      <details><summary>Can I provide my own balloons?</summary><p>We use professional-quality balloons so we can control quality, colours, sizes and quantities. For this reason, we are unable to use customer-supplied balloons.</p></details>
+      <details><summary>Do you deliver and set up?</summary><p>Yes. Delivery and setup are available depending on the location and decoration type, and are quoted separately.</p></details>
+      <details><summary>What areas do you service?</summary><p>We are based in Invercargill and service Invercargill, surrounding areas and Southland. Travel outside Southland can be arranged and may incur a travel fee.</p></details>
+      <details><summary>Do you make custom cutouts?</summary><p>Yes. We create custom cutouts for birthdays, baby showers, weddings, events and other celebrations. Include your idea or reference image in the quote request.</p></details>
+      <details><summary>How long does a balloon garland last?</summary><p>Indoor balloon garlands generally last approximately 2 to 4 weeks. Sunlight, heat and wind can affect outdoor lifespan.</p></details>
+      <details><summary>Do you offer DIY Balloon Garland Kits?</summary><p>Yes. Kits include the balloons and materials needed to assemble a garland, together with instructions.</p></details>
+      <details><summary>Can I set up the decoration myself?</summary><p>Yes. You can collect ready-to-install items and set them up yourself. You are responsible for setup, pack-down and returning hired items by the agreed time. A refundable bond may apply.</p></details>
+      <details><summary>Can I return the decoration myself?</summary><p>Yes. If your event is outside Invercargill, you can return hired items at the agreed time. A refundable bond is required and items must be returned in the same condition.</p></details>
+      <details><summary>How do I request a quote?</summary><p>Click Request a Quote and complete the form with as much information as possible. We will review your request and get back to you with a personalised quote.</p></details>
+      <details><summary>Do I need to pay a deposit?</summary><p>Yes. A 50% deposit secures your booking. The remaining 50% balance is due 2 days before the decoration date.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Product details / quote flow -->
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+    <button class="modal-close" type="button" aria-label="Close">×</button>
+    <img id="productModalImage" src="" alt="">
+    <div class="product-modal-copy"><div class="eyebrow">Product details</div><h2 id="productModalTitle"></h2><p id="productModalDescription">A tailored Decorlloon setup, built to suit your event, colours and space.</p><strong id="productModalPrice"></strong><a class="btn btn--primary btn--lg" id="productQuoteLink" href="#contact">Request a quote</a></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
 
 <!-- Footer -->
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="brand"><span class="dot"></span>Decorlloon</div>
+        <div class="footer-logo-chip"><img src="images/logo.png" alt="Decorlloon — creating art with balloons" /></div>
         <p style="color:rgba(255,255,255,.68);max-width:34ch">Balloon garlands, arches and event styling across Invercargill and Southland. Designed, built and set up for you.</p>
+        <div class="socials footer-socials">
+          <a class="social-ic" href="https://www.facebook.com/Decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a class="social-ic" href="https://www.instagram.com/decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
       </div>
       <div>
         <h5>Explore</h5>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#work">Our Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="review.html">Leave a Review</a></li>
+          <li><a href="#reviews">Leave a Review</a></li>
         </ul>
       </div>
       <div>
@@ -297,7 +482,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="yr"></span> Decorlloon · Invercargill, Southland</span>
-      <span><a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></span>
+      <span><a href="#contact">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="#contact">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
@@ -325,6 +510,31 @@
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   // Year
   document.getElementById('yr').textContent=new Date().getFullYear();
+  // Gallery lightbox
+  const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightboxImg');
+  const closeLb=()=>{lb.classList.remove('open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';lbImg.src='';};
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.style.cursor='zoom-in';
+    img.addEventListener('click',()=>{lbImg.src=img.src;lbImg.alt=img.alt;lb.classList.add('open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';});
+  });
+  lb.querySelector('.lightbox-close').addEventListener('click',closeLb);
+  lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+  // Shop filters and product-to-quote flow
+  const filterButtons=[...document.querySelectorAll('.shop-filter')];
+  const products=[...document.querySelectorAll('.product-card')];
+  filterButtons.forEach(button=>button.addEventListener('click',()=>{
+    filterButtons.forEach(b=>b.classList.toggle('active',b===button));
+    const filter=button.dataset.filter;
+    products.forEach(card=>card.classList.toggle('is-hidden',filter!=='all'&&!card.dataset.category.split(' ').includes(filter)));
+  }));
+  const productModal=document.getElementById('productModal'), productModalImage=document.getElementById('productModalImage'), productModalTitle=document.getElementById('productModalTitle'), productModalPrice=document.getElementById('productModalPrice'), quoteProduct=document.getElementById('quoteProduct');
+  const closeProduct=()=>{productModal.classList.remove('open');productModal.setAttribute('aria-hidden','true');document.body.style.overflow='';};
+  products.forEach(card=>card.querySelector('.product-image').addEventListener('click',()=>{
+    const image=card.querySelector('img'); productModalImage.src=image.src; productModalImage.alt=image.alt; productModalTitle.textContent=card.dataset.product; productModalPrice.textContent=card.dataset.price; quoteProduct.value=card.dataset.product; productModal.classList.add('open'); productModal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+  }));
+  document.querySelector('.modal-close').addEventListener('click',closeProduct); productModal.addEventListener('click',e=>{if(e.target===productModal)closeProduct();});
+  document.getElementById('productQuoteLink').addEventListener('click',closeProduct);
 </script>
 </body>
 </html>
