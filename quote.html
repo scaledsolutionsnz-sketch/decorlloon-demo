@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote | Decorlloon, Invercargill</title>
+<meta name="description" content="Request a personalised balloon styling quote and design mockup from Decorlloon, Invercargill and Southland.">
+<meta property="og:title" content="Decorlloon | Balloon Styling, Invercargill">
+<meta property="og:description" content="Balloon garlands, arches and event styling across Invercargill and Southland. Designed, built and set up for you.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://decorlloon-demo.vercel.app/images/decor-01.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Great+Vibes&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="quote-page">
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="brand"><img class="brand-logo" src="images/logo.png" alt="Decorlloon" /></a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#shop">Shop All</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#local-spot">Local Spot</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="quote.html" class="btn btn--primary nav-cta">Request a Quote</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+
+<main>
+<header class="page-hero quote-hero">
+  <div class="wrap">
+    <div class="eyebrow">Request a quote</div>
+    <h1>Let’s bring your celebration to life.</h1>
+    <p>Complete this form with as much information as possible and we’ll use your details to create a personalised quote for your special occasion. Check out our <a href="https://canva.link/decorlloon-catalogue" target="_blank" rel="noopener">catalogue</a> for inspiration.</p>
+  </div>
+</header>
+
+<section class="section section--cream">
+  <div class="wrap">
+    <form class="qform" id="qform" action="https://formsubmit.co/decorlloon@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
+      <input type="hidden" name="_subject" value="New quote request from the Decorlloon website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://decorlloon-demo.vercel.app/thanks.html">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset><legend>Customer details</legend>
+        <div class="qgrid">
+          <label>Full name<input name="Full name" autocomplete="name" placeholder="Enter your full name" required></label>
+          <label>Email address<input type="email" name="email" autocomplete="email" placeholder="Enter your email address" required></label>
+          <label>Phone number<input type="tel" name="Phone" autocomplete="tel" placeholder="Enter your phone number" required></label>
+          <label>Address<input name="Address" autocomplete="street-address" placeholder="Enter your address" required></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Event details</legend>
+        <div class="qgrid">
+          <label>Type of event<select name="Event type" id="eventType" required><option value="">Select…</option><option>Birthday</option><option>21st Birthday</option><option>Baby Shower</option><option>Christening</option><option>Wedding</option><option>Anniversary</option><option>Engagement</option><option>Corporate Event</option><option>Other</option></select></label>
+          <label class="cond" data-show="eventOther">Please specify your event type<input name="Event type (other)" placeholder="e.g. Graduation, School Event…" required></label>
+          <label>Event / delivery date<input type="date" name="Event date" required></label>
+          <label>What time do you need the decoration ready?<input type="time" name="Ready by" required></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Balloon decoration</legend>
+        <p class="qhint">What type of balloon decoration are you looking for? Choose all that apply.</p>
+        <div class="choices" id="decorChoices" data-required-group><label class="choice"><input type="checkbox" name="Decoration type[]" value="Background Balloon Decoration" data-decor="Background Balloon Decoration"><span><b>Background Balloon Decoration</b><small>A large, customisable balloon display perfect for photo backdrops and focal points.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Organic Balloon Garland" data-decor="Organic Balloon Garland"><span><b>Organic Balloon Garland</b><small>An organic-style balloon garland made with balloons of different sizes, creating a natural, flowing and fuller look. Customised to your preferred colours, size and style.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Balloon Columns" data-decor="Balloon Columns"><span><b>Balloon Columns</b><small>Freestanding balloon columns, perfect for entrances, parties and events.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Balloon Centrepiece" data-decor="Balloon Centrepiece"><span><b>Balloon Centrepiece</b><small>Smaller balloon arrangements designed to decorate tables or specific areas.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Balloon Flower Bouquet" data-decor="Balloon Flower Bouquet"><span><b>Balloon Flower Bouquet</b><small>Decorative balloon flowers arranged into a beautiful bouquet.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Bubble Balloon Arrangement" data-decor="Bubble Balloon Arrangement"><span><b>Bubble Balloon Arrangement</b><small>Clear bubble balloons with a personalised or decorative balloon arrangement.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Number Balloon Arrangement" data-decor="Number Balloon Arrangement"><span><b>Number Balloon Arrangement</b><small>Decorative balloon arrangements featuring numbers for birthdays and milestone celebrations.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Helium Balloons" data-decor="Helium Balloons"><span><b>Helium Balloons</b><small>Floating latex, foil or bubble balloons filled with helium.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Cutouts" data-decor="Cutouts"><span><b>Cutouts</b><small>Custom-made cutouts of your favourite characters, logos or shapes, perfect for themed events and photo opportunities.</small></span></label><label class="choice"><input type="checkbox" name="Decoration type[]" value="Other" data-decor="Other"><span><b>Other</b></span></label></div>
+        <p class="qerr" id="decorErr" hidden>Choose at least one type of decoration.</p>
+        <div class="cond" data-show="cutouts">
+          <p class="qq">Do you already have an image or reference for your cutout?</p>
+          <div class="choices row"><label class="choice inline"><input type="radio" name="Cutout reference" value="Yes, I have an image or reference" required><span><b>Yes, I have an image or reference</b></span></label><label class="choice inline"><input type="radio" name="Cutout reference" value="No, I need help finding one"><span><b>No, I need help finding one</b></span></label></div>
+          <div class="cond qgrid" data-show="cutoutYes">
+            <label class="full">Please upload the image or reference in the highest quality available.<input type="file" name="attachment" accept="image/*,.pdf" required></label>
+            <label class="full">Where did you find this image or reference?<input name="Cutout reference source" placeholder="Website, social media page, link or any other source" required></label>
+          </div>
+          <div class="cond qgrid" data-show="cutoutNo">
+            <label class="full">What type of cutout are you looking for?<input name="Cutout type" placeholder="e.g. animal, cartoon character, person…" required></label>
+            <label class="full">Please describe what you are looking for<textarea name="Cutout description" rows="3" placeholder="Describe the design, pose or style…" required></textarea></label>
+          </div>
+        </div>
+        <div class="cond qgrid" data-show="decorOther">
+          <label class="full">Please describe your decoration idea<input name="Decoration idea (other)" placeholder="Please describe your decoration idea" required></label>
+          <label class="full">Add a photo or reference (optional)<input type="file" name="attachment" accept="image/*,.pdf"></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Other decoration &amp; products</legend>
+        <p class="qhint">What other decoration or products are you interested in?</p>
+        <div class="choices"><label class="choice"><input type="checkbox" name="Other products[]" value="Light-Up Numbers" data-other="Light-Up Numbers"><span><b>Light-Up Numbers</b></span></label><label class="choice"><input type="checkbox" name="Other products[]" value="Cake Table Styling" data-other="Cake Table Styling"><span><b>Cake Table Styling</b></span></label><label class="choice"><input type="checkbox" name="Other products[]" value="Personalised Gift Box" data-other="Personalised Gift Box"><span><b>Personalised Gift Box</b></span></label><label class="choice"><input type="checkbox" name="Other products[]" value="Neon sign happy birthday" data-other="Neon sign happy birthday"><span><b>Neon sign happy birthday</b></span></label><label class="choice"><input type="checkbox" name="Other products[]" value="Neon sign lets party" data-other="Neon sign lets party"><span><b>Neon sign lets party</b></span></label><label class="choice"><input type="checkbox" name="Other products[]" value="Other" data-other="Other"><span><b>Other</b></span></label></div>
+        <div class="cond qgrid" data-show="productsOther"><label class="full">Please describe your request<input name="Other products (describe)" placeholder="Type here…" required></label></div>
+      </fieldset>
+
+      <fieldset><legend>Colours &amp; style</legend>
+        <figure class="chart"><a href="images/colour-chart.jpg" target="_blank" rel="noopener"><img src="images/colour-chart.jpg" alt="Decorlloon balloon colour chart" loading="lazy"></a><figcaption>Balloon colour chart</figcaption></figure>
+        <div class="qnote">
+          <p>Need inspiration for custom balloon combinations? You can use <a href="https://www.sempertexeurope.com/en_GB/inspiration#calculator" target="_blank" rel="noopener">this colour calculator</a> to visualise different combinations using the same balloon shades we offer in our catalogue. For a unique look, you can also combine two balloons by placing one inside another (double-stuffing) to create a custom shade, whether you’re looking for a lighter, darker, softer, muted or completely unique colour.</p>
+          <p><b>Please note:</b></p>
+          <ul><li>Our available colours are those shown in our chart above; please only select from these for your base palette.</li><li>“Double-stuffed” balloons are charged at double the price due to the extra materials and time involved.</li></ul>
+        </div>
+        <div class="qgrid">
+          <label class="full">What are your preferred colours?<input name="Preferred colours" placeholder="List colours you’d like" required></label>
+          <label class="full">Do you have a specific theme or style in mind?<input name="Theme or style" placeholder="e.g. Safari, Boho, Glamour"></label>
+          <label class="full">Please tell us about your decoration idea<textarea name="Decoration idea" id="ideaField" rows="4" placeholder="Share details about your vision…"></textarea></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Personalisation</legend>
+        <p class="qq">Would you like personalised elements?</p>
+        <div class="choices row"><label class="choice inline"><input type="radio" name="Personalised elements" value="Yes" required><span><b>Yes</b></span></label><label class="choice inline"><input type="radio" name="Personalised elements" value="No"><span><b>No</b></span></label><label class="choice inline"><input type="radio" name="Personalised elements" value="Not sure yet"><span><b>Not sure yet</b></span></label></div>
+        <div class="cond qgrid" data-show="personalYes"><label class="full">Please provide the name, age or wording you would like included<input name="Personalised wording" placeholder="Enter text here" required></label></div>
+      </fieldset>
+
+      <fieldset><legend>Photos &amp; budget</legend>
+        <div class="qgrid">
+          <label class="full">Do you have any inspiration photos?<input type="file" name="attachment" accept="image/*" multiple></label>
+          <label class="full">What is your approximate budget?<small>This helps us recommend the best options for your event.</small><select name="Budget" required><option value="">Select…</option><option>Under $100</option><option>$100–$200</option><option>$200–$400</option><option>$400+</option><option>Not sure yet</option></select></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Pickup or delivery</legend>
+        <p class="qq">Would you like pickup or delivery?</p>
+        <div class="choices row"><label class="choice inline"><input type="radio" name="Pickup or delivery" value="Pickup" required><span><b>Pickup</b></span></label><label class="choice inline"><input type="radio" name="Pickup or delivery" value="Delivery"><span><b>Delivery</b></span></label></div>
+        <div class="cond qgrid" data-show="delivery">
+          <label class="full">Delivery address<input name="Delivery address" placeholder="Enter delivery address" required></label>
+          <label>Where will the decoration be set up?<select name="Setup location"><option value="">Select…</option><option>Private home</option><option>Event venue</option><option>Business / corporate venue</option><option>Other</option></select></label>
+          <label>Earliest arrival time?<input type="time" name="Earliest arrival time" required></label>
+        </div>
+      </fieldset>
+
+      <fieldset><legend>Final details</legend>
+        <p class="qq">Indoors or outdoors?</p>
+        <div class="choices row"><label class="choice inline"><input type="radio" name="Indoors or outdoors" value="Indoors" required><span><b>Indoors</b></span></label><label class="choice inline"><input type="radio" name="Indoors or outdoors" value="Outdoors"><span><b>Outdoors</b></span></label></div>
+        <div class="qgrid"><label class="full">Is there anything else we should know?<textarea name="Anything else" rows="4" placeholder="Special requests or extra details…"></textarea></label></div>
+      </fieldset>
+
+      <p class="qerr" id="formErr" hidden>Please fill in the highlighted questions.</p>
+      <p class="qerr" id="sizeErr" hidden>Your photos add up to more than 10 MB. Please send smaller images.</p>
+      <button class="btn btn--primary btn--lg" type="submit" id="qsubmit">Send quote request</button>
+      <p class="qsmall">We’ll review your details and get back to you within five working days with your personalised quote and a design mockup.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-chip"><img src="images/logo.png" alt="Decorlloon, creating art with balloons" /></div>
+        <p style="color:rgba(255,255,255,.68);max-width:34ch">Balloon garlands, arches and event styling across Invercargill and Southland. Designed, built and set up for you.</p>
+        <div class="socials footer-socials">
+          <a class="social-ic" href="https://www.facebook.com/Decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a class="social-ic" href="https://www.instagram.com/decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#shop">Shop all</a></li>
+          <li><a href="index.html#catalogue">Catalogue</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="https://www.google.com/search?q=Decorlloon+Invercargill" target="_blank" rel="noopener">Leave a Review</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="tel:+64274596719">027 459 6719</a></li>
+          <li><a href="mailto:decorlloon@gmail.com">decorlloon@gmail.com</a></li>
+          <li><span style="color:rgba(255,255,255,.68)">Invercargill, Southland</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Decorlloon · Invercargill, Southland</span>
+      <span><a href="quote.html">Request a Quote</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Nav
+  const nav=document.getElementById('nav');nav.classList.add('scrolled');
+  const toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+  toggle.addEventListener('click',()=>links.classList.toggle('open'));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  document.getElementById('intro')?.remove();
+
+  // A product picked in Shop all arrives as ?product=
+  const product=new URLSearchParams(location.search).get('product');
+  if(product){const f=document.getElementById('ideaField');f.value='I’m interested in: '+product+'\n';}
+
+  // Show follow-up questions only when they apply. Hidden fields are disabled,
+  // so they are neither required nor sent.
+  const form=document.getElementById('qform');
+  const val=n=>(form.querySelector(`[name="${n}"]:checked`)||{}).value;
+  const has=(attr,v)=>!!form.querySelector(`[data-${attr}="${v}"]:checked`);
+  const rules={
+    eventOther:()=>document.getElementById('eventType').value==='Other',
+    cutouts:()=>has('decor','Cutouts'),
+    cutoutYes:()=>has('decor','Cutouts')&&val('Cutout reference')==='Yes, I have an image or reference',
+    cutoutNo:()=>has('decor','Cutouts')&&val('Cutout reference')==='No, I need help finding one',
+    decorOther:()=>has('decor','Other'),
+    productsOther:()=>has('other','Other'),
+    personalYes:()=>val('Personalised elements')==='Yes',
+    delivery:()=>val('Pickup or delivery')==='Delivery',
+  };
+  function sync(){
+    form.querySelectorAll('.cond').forEach(el=>{
+      const on=rules[el.dataset.show]();el.hidden=!on;
+      el.querySelectorAll(':scope > input, :scope > select, :scope > textarea, :scope > label input, :scope > label select, :scope > label textarea, :scope > .choices input').forEach(i=>i.disabled=!on);
+    });
+    // nested groups: a hidden parent disables everything inside it
+    form.querySelectorAll('.cond[hidden] input, .cond[hidden] select, .cond[hidden] textarea').forEach(i=>i.disabled=true);
+  }
+  form.addEventListener('change',sync);sync();
+
+  form.addEventListener('submit',e=>{
+    sync();
+    let ok=form.checkValidity();
+    const decorOk=!!form.querySelector('[data-decor]:checked');
+    document.getElementById('decorErr').hidden=decorOk; if(!decorOk) ok=false;
+    let bytes=0; form.querySelectorAll('input[type=file]:not(:disabled)').forEach(i=>[...i.files].forEach(f=>bytes+=f.size));
+    const sizeOk=bytes<=10*1024*1024; document.getElementById('sizeErr').hidden=sizeOk; if(!sizeOk) ok=false;
+    form.classList.add('tried');
+    document.getElementById('formErr').hidden=ok;
+    if(!ok){e.preventDefault();const bad=form.querySelector(':invalid')||document.getElementById(decorOk?'sizeErr':'decorErr');bad?.scrollIntoView({behavior:'smooth',block:'center'});bad?.focus?.({preventScroll:true});return;}
+    const b=document.getElementById('qsubmit');b.disabled=true;b.textContent='Sending…';
+  });
+</script>
+</body>
+</html>
