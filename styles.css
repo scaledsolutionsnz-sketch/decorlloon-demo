@@ -426,3 +426,8 @@ p{margin:0 0 1rem}
 .complete>.script-line{margin:72px 0 0}
 @media(max-width:640px){.complete>.script-line{margin-top:48px}}
 @media(max-width:640px){.hero-scroll{display:none}}
+/* Catalogue: the box matches the A4 page shape so Canva has no black letterbox to show,
+   framed in the dusty pink from Yasna's mock-up. */
+.catalogue-frame{max-width:520px;margin:0 auto;background:#cf93a7;padding:16px;border-radius:22px;box-shadow:var(--shadow-soft)}
+.catalogue-frame .canva-preview,.catalogue-frame .canva-preview{position:relative;height:auto;padding-bottom:0!important;max-width:none;aspect-ratio:1/1.4142;border-radius:10px;overflow:hidden;background:#fffaf2}
+@media(max-width:640px){.catalogue-frame{padding:10px;border-radius:16px}}
