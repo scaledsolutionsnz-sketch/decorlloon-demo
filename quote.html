@@ -18,8 +18,9 @@
 <body class="quote-page">
 <!-- Nav -->
 <nav class="nav" id="nav">
-  <a href="index.html" class="brand"><img class="brand-logo" src="images/logo.png" alt="Decorlloon" /></a>
+  <a href="index.html" class="brand" aria-label="Decorlloon home"><img class="brand-logo brand-logo--light" src="images/logo-full-white.png" width="1000" height="756" alt="Decorlloon, creating art with balloons"><img class="brand-logo brand-logo--dark" src="images/logo-full-dark.png" width="1000" height="756" alt="" aria-hidden="true"></a>
   <div class="nav-links" id="navLinks">
+    <div class="nav-panel-head"><img class="nav-panel-logo" src="images/logo-full-dark.png" width="1000" height="756" alt="Decorlloon, creating art with balloons"><button class="nav-close" id="navClose" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
     <a href="index.html#services">Services</a>
     <a href="index.html#shop">Shop All</a>
     <a href="index.html#about">About</a>
@@ -28,7 +29,8 @@
     <a href="index.html#faq">FAQ</a>
     <a href="quote.html" class="btn btn--primary nav-cta">Request a Quote</a>
   </div>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 </nav>
 
 
@@ -153,7 +155,7 @@
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="footer-logo-chip"><img src="images/logo.png" alt="Decorlloon, creating art with balloons" /></div>
+        <img class="footer-logo" src="images/logo-full-white.png" width="1000" height="756" alt="Decorlloon, creating art with balloons" loading="lazy">
         <p style="color:rgba(255,255,255,.68);max-width:34ch">Balloon garlands, arches and event styling across Invercargill and Southland. Designed, built and set up for you.</p>
         <div class="socials footer-socials">
           <a class="social-ic" href="https://www.facebook.com/Decorlloon/" target="_blank" rel="noopener" aria-label="Decorlloon on Facebook">
@@ -194,8 +196,6 @@
 <script>
   // Nav
   const nav=document.getElementById('nav');nav.classList.add('scrolled');
-  const toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
-  toggle.addEventListener('click',()=>links.classList.toggle('open'));
   document.getElementById('yr').textContent=new Date().getFullYear();
   document.getElementById('intro')?.remove();
 
@@ -241,5 +241,6 @@
     const b=document.getElementById('qsubmit');b.disabled=true;b.textContent='Sending…';
   });
 </script>
+<script src="script.js"></script>
 </body>
 </html>
