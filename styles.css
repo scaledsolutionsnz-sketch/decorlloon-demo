@@ -505,13 +505,14 @@ p{margin:0 0 1rem}
 
 /* Shop all: small outline icon in each category button, as in Yasna's mock-up (13 Oct 2026) */
 .shop-filter{display:inline-flex;align-items:center;gap:8px}
-.shop-filter .sf-ic{width:22px;height:22px;flex:none;display:block}
-@media(max-width:560px){.shop-filters{scroll-padding-inline:22px}.shop-filter{gap:7px;padding:9px 15px 9px 13px}.shop-filter .sf-ic{width:20px;height:20px}}
+.shop-filter .sf-ic{width:26px;height:26px;flex:none;display:block}
+@media(max-width:560px){.shop-filters{scroll-padding-inline:22px}.shop-filter{gap:7px;padding:8px 15px 8px 12px}.shop-filter .sf-ic{width:24px;height:24px}}
 .product-modal-size{margin:-6px 0 0;font-size:.88rem;color:var(--muted)}
 @media(min-width:1101px){
   .shop-section .shop-filters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:34px}
-  .shop-section .shop-filter{min-height:54px;padding:8px 12px;gap:7px;font-size:.68rem;letter-spacing:.06em;line-height:1.3}
+  .shop-section .shop-filter{min-height:54px;padding:8px 10px;gap:6px;font-size:.68rem;letter-spacing:.06em;line-height:1.3}
   .shop-section .shop-filter span{flex:1;text-align:center}
+  .shop-section .shop-filter .sf-ic{width:28px;height:28px}
 }
 /* Product details can now be long (Yasna's catalogue descriptions): let the dialog scroll on short screens */
 .product-modal{display:flex;overflow-y:auto;overscroll-behavior:contain}
