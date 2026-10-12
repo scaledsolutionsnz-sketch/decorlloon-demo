@@ -471,3 +471,34 @@ p{margin:0 0 1rem}
   .local-map img{min-height:260px}
 }
 @media(max-width:560px){.local-spot-copy .btn{white-space:normal;max-width:100%;text-align:center;padding:.85rem 1.3rem;font-size:1rem}}
+
+/* Shop all: more colour, watercolour balloons either side (Yasna's design, 12 Oct 2026) */
+.shop-section{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff0f4 0%,#fff7f9 45%,var(--white) 100%)}
+.shop-section .wrap{position:relative;z-index:1}
+.shop-deco{position:absolute;top:34px;width:clamp(120px,13vw,190px);height:auto;pointer-events:none;z-index:0}
+.shop-deco--left{left:clamp(4px,2.5vw,48px);transform:rotate(-6deg)}
+.shop-deco--right{right:clamp(4px,2.5vw,48px);transform:rotate(6deg)}
+.shop-title{color:var(--accent);letter-spacing:.06em}
+.shop-section .section-head.center{max-width:620px}
+.shop-section .shop-filters{justify-content:center}
+.shop-filter{border:1.5px solid var(--accent);background:#fff;color:var(--accent);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:10px 18px}
+.shop-filter:hover{background:var(--accent-soft,#fbe3ec);border-color:var(--accent);color:var(--accent)}
+.shop-filter.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.shop-section .product-card{background:#fff;border-radius:20px;padding:10px;box-shadow:0 14px 34px -24px rgba(167,25,80,.45)}
+.shop-section .product-meta{padding:12px 6px 6px}
+.shop-empty{text-align:center;color:var(--muted);margin:10px auto 0;max-width:46ch}
+.shop-empty a{color:var(--accent);font-weight:700}
+@media(max-width:900px){.shop-deco{top:24px;width:96px;opacity:.9}}
+@media(max-width:560px){.shop-deco{top:14px;width:62px}.shop-section .shop-filters{justify-content:flex-start}.shop-section .product-card{padding:7px;border-radius:16px}}
+
+/* Request a quote: light, playful header with Yasna's balloon outline illustration (12 Oct 2026) */
+.quote-page .quote-hero:not(.thanks){background:#fff7f9 url("images/quote-outline-1920.webp") center bottom/cover no-repeat;color:var(--ink);padding-bottom:110px}
+.quote-page .quote-hero:not(.thanks)::before{display:none}
+.quote-page .quote-hero:not(.thanks) .wrap{max-width:820px;padding:26px 28px;border-radius:28px;background:radial-gradient(closest-side,rgba(255,250,252,.94),rgba(255,250,252,.82) 70%,rgba(255,250,252,0))}
+.quote-page .quote-hero:not(.thanks) h1{color:var(--ink)}
+.quote-page .quote-hero:not(.thanks) p{color:var(--ink)}
+.quote-page .quote-hero:not(.thanks) p a{color:var(--accent)}
+.quote-page .quote-hero:not(.thanks) .eyebrow{color:var(--accent)}
+@media(max-width:1100px){.quote-page .quote-hero:not(.thanks){background-image:url("images/quote-outline-1080.webp")}}
+@media(max-width:700px){.quote-page .quote-hero:not(.thanks){background-size:auto 100%;padding-bottom:80px}.quote-page .quote-hero:not(.thanks) .wrap{padding:18px 16px;background:rgba(255,250,252,.88)}}
+.product-image img{height:auto}

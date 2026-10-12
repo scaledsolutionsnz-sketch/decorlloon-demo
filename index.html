@@ -93,27 +93,32 @@
 </section>
 
 <!-- Shop all -->
-<section class="section section--white" id="shop">
+<section class="section shop-section" id="shop">
+  <img class="shop-deco shop-deco--left" src="images/shop-balloons-left.webp" width="742" height="952" alt="" aria-hidden="true" data-img-role="small" loading="lazy">
+  <img class="shop-deco shop-deco--right" src="images/shop-balloons-right.webp" width="742" height="952" alt="" aria-hidden="true" data-img-role="small" loading="lazy">
   <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Shop all</div>
-            <p>Browse the range, filter by style, then request a quote with the product already selected.</p>
+    <div class="section-head center reveal">
+      <div class="eyebrow center-eyebrow">Shop all</div>
+      <h2 class="shop-title">Explore Our Decorations</h2>
+      <p>Browse the range, filter by style, then request a quote with the product already selected.</p>
     </div>
     <div class="shop-filters" role="tablist" aria-label="Product categories">
       <button class="shop-filter active" data-filter="all" role="tab">All</button>
       <button class="shop-filter" data-filter="number" role="tab">Number Balloons</button>
-      <button class="shop-filter" data-filter="lettering" role="tab">Lettering &amp; Number Balloons</button>
       <button class="shop-filter" data-filter="character" role="tab">Number &amp; Character Balloons</button>
+      <button class="shop-filter" data-filter="lettering" role="tab">Lettering Balloons</button>
+      <button class="shop-filter" data-filter="centrepieces" role="tab">Balloon Centrepieces</button>
       <button class="shop-filter" data-filter="bubble" role="tab">Bubble Balloons</button>
-      <button class="shop-filter" data-filter="columns" role="tab">Columns Balloons</button>
-      <button class="shop-filter" data-filter="helium" role="tab">Helium balloons</button>
-      <button class="shop-filter" data-filter="bouquet" role="tab">Balloon Flowers</button>
-      <button class="shop-filter" data-filter="easel" role="tab">Easel Stand with Personalised Poster &amp; Balloon Arrangement</button>
+      <button class="shop-filter" data-filter="columns" role="tab">Column Balloons</button>
+      <button class="shop-filter" data-filter="helium" role="tab">Helium Balloons</button>
+      <button class="shop-filter" data-filter="bouquet" role="tab">Flower Balloons</button>
+      <button class="shop-filter" data-filter="boxes" role="tab">Boxes</button>
       <button class="shop-filter" data-filter="background" role="tab">Background Decorations</button>
+      <button class="shop-filter" data-filter="frames" role="tab">Frames &amp; Structures</button>
     </div>
     <div class="product-grid" id="productGrid">
       <article class="product-card reveal" data-category="number" data-product="Number Balloon Arrangement" data-price="From $145">
-        <button class="product-image" type="button"><img src="images/decor-01.jpg" alt="Blue and silver birthday balloon display"></button>
+        <button class="product-image" type="button"><img src="images/decor-03.jpg" alt="Silver 60 number balloons on a navy, gold and silver balloon base with a champagne bottle balloon" width="876" height="1200" loading="lazy"></button>
         <div class="product-meta"><span>Number balloons</span><strong>Number Balloon Arrangement</strong><b>From $145</b></div>
       </article>
       <article class="product-card reveal" data-category="bubble" data-product="Bubble Balloon Arrangement" data-price="From $75">
@@ -121,10 +126,10 @@
         <div class="product-meta"><span>Bubble balloons</span><strong>Bubble Balloon Arrangement</strong><b>From $75</b></div>
       </article>
       <article class="product-card reveal" data-category="background" data-product="21st Background Decorations" data-price="From $325">
-        <button class="product-image" type="button"><img src="images/decor-03.jpg" alt="Milestone number balloon display"></button>
+        <button class="product-image" type="button"><img src="images/decor-10.jpg" alt="21st backdrop with light-up 21 numbers, black and gold balloons and a personalised arch board" width="1200" height="1200" loading="lazy"></button>
         <div class="product-meta"><span>Background decorations</span><strong>21st Background Decorations</strong><b>From $325</b></div>
       </article>
-      <article class="product-card reveal" data-category="bubble bouquet" data-product="Personalised Bubble Bouquet" data-price="From $75">
+      <article class="product-card reveal" data-category="bubble" data-product="Personalised Bubble Bouquet" data-price="From $75">
         <button class="product-image" type="button"><img src="images/decor-04.jpg" alt="Personalised bubble balloon gift"></button>
         <div class="product-meta"><span>Bubble balloons</span><strong>Personalised Bubble Bouquet</strong><b>From $75</b></div>
       </article>
@@ -134,10 +139,10 @@
       </article>
       <article class="product-card reveal" data-category="bouquet helium" data-product="Balloon Flower Bouquet" data-price="From $85">
         <button class="product-image" type="button"><img src="images/decor-06.jpg" alt="Silver and blue balloon flower bouquet"></button>
-        <div class="product-meta"><span>Flower bouquets</span><strong>Balloon Flower Bouquet</strong><b>From $85</b></div>
+        <div class="product-meta"><span>Flower balloons</span><strong>Balloon Flower Bouquet</strong><b>From $85</b></div>
       </article>
       <article class="product-card reveal" data-category="easel background" data-product="Easel Welcome Display" data-price="From $145">
-        <button class="product-image" type="button"><img src="images/decor-10.jpg" alt="Black and gold event display"></button>
+        <button class="product-image" type="button"><img src="images/decor-01.jpg" alt="Blue, silver and black balloon backdrop with a Happy Birthday neon sign" width="1200" height="1070" loading="lazy"></button>
         <div class="product-meta"><span>Easel &amp; backdrop</span><strong>Easel Welcome Display</strong><b>From $145</b></div>
       </article>
       <article class="product-card reveal" data-category="background bubble" data-product="Statement Backdrop Garland" data-price="From $180">
@@ -145,6 +150,7 @@
         <div class="product-meta"><span>Background decorations</span><strong>Statement Backdrop Garland</strong><b>From $180</b></div>
       </article>
     </div>
+    <p class="shop-empty" id="shopEmpty" hidden>More decorations in this style are coming soon. <a href="quote.html">Request a quote</a> and tell us what you have in mind.</p>
   </div>
 </section>
 
@@ -385,6 +391,7 @@
     filterButtons.forEach(b=>b.classList.toggle('active',b===button));
     const filter=button.dataset.filter;
     products.forEach(card=>card.classList.toggle('is-hidden',filter!=='all'&&!card.dataset.category.split(' ').includes(filter)));
+    document.getElementById('shopEmpty').hidden=products.some(card=>!card.classList.contains('is-hidden'));
   }));
   const productModal=document.getElementById('productModal'), productModalImage=document.getElementById('productModalImage'), productModalTitle=document.getElementById('productModalTitle'), productModalPrice=document.getElementById('productModalPrice'), productQuoteLink=document.getElementById('productQuoteLink');
   const closeProduct=()=>{productModal.classList.remove('open');productModal.setAttribute('aria-hidden','true');document.body.style.overflow='';};
