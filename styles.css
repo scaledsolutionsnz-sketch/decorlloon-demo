@@ -518,3 +518,5 @@ p{margin:0 0 1rem}
 .product-modal{display:flex;overflow-y:auto;overscroll-behavior:contain}
 .product-modal-card{margin:auto}
 .about-media img,.contact-media img,.chart img{height:auto}
+/* Shop all: very tall product photos keep their top (the bubble or star) in view in the square card (13 Oct 2026) */
+.product-image img.img-top{object-position:50% 0}
