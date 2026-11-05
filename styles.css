@@ -526,3 +526,9 @@ p{margin:0 0 1rem}
 .product-modal-includes ul{margin:0;padding-left:18px;display:grid;gap:3px}
 .product-modal-note{margin:-4px 0 0;font-size:.82rem;font-style:italic;color:var(--muted)}
 @media(min-width:1101px){.shop-section .shop-filters{grid-template-columns:repeat(7,minmax(0,1fr))}}
+/* Local spot: the Piece of Cake logo opens pieceofcake.nz (5 Nov 2026) */
+.piece-logo-link{display:block;width:100%;max-width:300px;margin-bottom:20px;border-radius:14px;transition:transform .25s,box-shadow .25s}
+.piece-logo-link .piece-logo{display:block;margin-bottom:0}
+.piece-logo-link:hover,.piece-logo-link:focus-visible{transform:translateY(-2px);box-shadow:0 12px 26px -16px rgba(167,25,80,.55)}
+/* Shop all: a photo whose subject sits at the bottom (the jute rug) keeps it in view in the square card (5 Nov 2026) */
+.product-image img.img-bottom{object-position:50% 100%}
